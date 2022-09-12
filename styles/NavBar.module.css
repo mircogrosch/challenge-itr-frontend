@@ -1,0 +1,59 @@
+.container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    background-color: black;
+    opacity: 0.9;
+    height: 50px;
+}
+.containerAssets{
+    display: flex;
+}
+.formContainer{ 
+    display: flex;
+    justify-content: center;
+
+}
+.inputCommerce{ 
+    border: 1px solid var(--gray);
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    width: 300px;
+    background-color: transparent;
+    padding: 10px;
+    color:var(--white);
+    outline:none;
+
+}
+
+.inputLocation{ 
+    border: 1px solid var(--gray);
+    width: 300px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-left: 1px solid var(--gray);
+    background-color: transparent;
+    padding: 10px;
+    outline:none;
+    color:var(--white);
+
+}
+
+.btnSearch{ 
+    color: var(--white);
+    background-color: dodgerblue;
+    border-radius: 50px;
+    cursor: pointer; 
+}
+
+.btn{
+    color:var(--white);
+    background-color: transparent;
+    cursor: pointer;
+}   
+
+.emoji{ 
+    font-size: 25px;
+    margin-bottom: 5px;
+}
