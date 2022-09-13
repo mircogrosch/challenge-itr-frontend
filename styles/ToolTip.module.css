@@ -1,0 +1,40 @@
+.container { 
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.container:hover .tooltip {
+	display: block;
+}
+.tooltip:before {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -6px;
+    position: absolute;
+    width: 0;
+}
+
+.tooltip {
+    background-color: #777777;
+    color: #FFFFFF;
+    display: none;
+    padding: 8px 8px;
+    width: max-content;
+    position: absolute;
+    top: -35px;
+    right: -8px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+.tooltip.Black{ 
+    background-color: var(--clubBlack);
+}
+.tooltip.Premium{ 
+    background-color: var(--clubPremium);
+}
+.tooltip.Classic{ 
+    background-color: var(--clubClassic);
+}

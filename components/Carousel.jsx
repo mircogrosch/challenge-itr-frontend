@@ -41,7 +41,7 @@ export default function Carousel({ children,show}) {
         <div className={styles.contentWrapper}>
           <div
             className={`${styles.content} ${styles[show]}`}
-            style={{ transform: `translateX(-${currentIndex * 100}%)`}}
+            style={{ transform: `translateX(-${currentIndex * (100 / number[show])}%)`}}
           >    
             {children}            
           </div>

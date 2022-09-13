@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images:{
+    domains: ["bucket1.glanacion.com"]
+  }
 }
 
 module.exports = nextConfig
