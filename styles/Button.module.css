@@ -19,3 +19,13 @@
     background-color: var(--blue);
     color: var(--white)
 }
+
+.btn.white{
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn.white:hover{
+    background-color: var(--white);
+    color: var(--blue)
+}

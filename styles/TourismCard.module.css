@@ -4,8 +4,8 @@
     width: 285px;
     height: 285px;
     background-color: var(--white);
-    border: 1px solid var(--gray);
-    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
 }
 .boxDescription h1{
     text-align: left;
@@ -25,10 +25,11 @@
     height: 50%;
 }
 .img{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     cursor: pointer;
 }
+
 .benefitsGroup{ 
     height: 100%;
     display: flex;

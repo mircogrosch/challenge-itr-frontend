@@ -12,10 +12,12 @@ export default function Header() {
         <Carousel show={"one"} type="header">
           <Image
             width={1500}
+            height={600}
             src={require("../public/assets/img/sushi-club.png")}
           />
           <Image
             width={1500}
+            height={600}
             src={require("../public/assets/img/header_2.png")}
           />
         </Carousel>

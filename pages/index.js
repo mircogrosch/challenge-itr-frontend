@@ -1,36 +1,43 @@
 import PageLayout from "../components/PageLayout";
 import Header from "../containers/Header";
 import TourismContainer from "../containers/TourismContainer";
-import { getBenefits,getBranches } from "../utils/http-common";
-
-export default function Home({branches,benefits}) {
+import { getBenefits, getBranches } from "../utils/http-common";
+import DiscountsContainer from "../containers/DiscountsContainer";
+import styles from "../styles/Home.module.css";
+export default function Home({ branches, benefits }) {
   return (
     <PageLayout title={"Club LA NACION"}>
-      <header>   
+
+      <header >
         <Header />
       </header>
-      <main> 
-         <div style={{display:"flex", justifyContent:"center", backgroundColor:"#f2f0f0", height:"100vh"}}> 
-              <TourismContainer branches={branches}/>
-         </div>
+
+      <main>
+
+        <div className={styles.mainTourism}>
+          <TourismContainer branches={branches} />
+        </div>
+
+        <div className={styles.mainDiscounts}>
+          <DiscountsContainer benefits={benefits} />
+        </div>
+
       </main>
-       
 
     </PageLayout>
   );
 }
 
+export async function getServerSideProps(context) {
+  const [benefits, branches] = await Promise.all([
+    getBenefits(),
+    getBranches(),
+  ]);
 
-export  async function getServerSideProps (context) {
-  
-    const [benefits,branches] =  await Promise.all([getBenefits(), getBranches()])
-   
-    
-  return{ 
-    props:{ 
+  return {
+    props: {
       benefits,
-      branches
-    }
-  }
-
+      branches,
+    },
+  };
 }

@@ -1,5 +1,6 @@
 .container { 
     width: 98%;
+
 }
 .description{
     display: flex;
@@ -8,5 +9,14 @@
     margin-bottom: 30px;
 }
 .description h1{
+    margin: 0;
+    margin-bottom: 4px;
+}
+.description p{ 
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.description button{
     margin-bottom: 20px;
 }
