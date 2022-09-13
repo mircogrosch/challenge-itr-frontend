@@ -1,0 +1,14 @@
+.container { 
+    width: 98%;
+
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.description h1{
+    margin: 0;
+    margin-bottom: 20px;
+}

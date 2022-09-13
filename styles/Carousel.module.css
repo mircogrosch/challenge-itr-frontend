@@ -19,7 +19,7 @@
 .content {
     display: flex;
     transition: all 500ms linear;
-    width: 100%;    
+  
 }
 
 .content::-webkit-scrollbar, .content::-webkit-scrollbar {
@@ -34,13 +34,18 @@
 
 
 .leftArrow, .rightArrow {
-    position: absolute;
+
     z-index: 1;
     top: 50%;
     border: none;
     background-color: transparent;
     cursor: pointer;
-    color: var(--white)
+    color: var(--gray) 
+
+}
+.leftArrow.header, .rightArrow.header{
+    position: absolute;
+    color: var(--white) 
 }
 
 .leftArrow {
@@ -56,10 +61,14 @@
 }
 
 .content.three > * {
-    margin: 0;
     width: calc(100% / 3);
 }
 
 .content.four > * {
     width: calc(100% / 4);
+}
+@media (hover: none) and (pointer: coarse) {
+    .left-arrow, .right-arrow {
+        display: none;
+    }
 }

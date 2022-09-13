@@ -1,0 +1,21 @@
+.btn{ 
+    background: transparent;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--blue);
+    border-radius: 30px;
+    border: 2px solid var(--blue);
+    transition: all .3s;
+    padding: 10px 25px;
+    height: min-content;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover{ 
+    background-color: var(--blue);
+    color: var(--white)
+}

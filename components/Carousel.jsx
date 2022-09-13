@@ -9,7 +9,7 @@ const number = {
   "four":4,
 }
 
-export default function Carousel({ children,show}) {
+export default function Carousel({ children,show,type}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [length, setLength] = useState(0);
 
@@ -31,28 +31,29 @@ export default function Carousel({ children,show}) {
 
   return (
     <div className={styles.container}>
+       
       <div className={styles.wrapper}>
-        {currentIndex > 0 && (
-          <button className={styles.leftArrow} onClick={() => prev()}>
+     
+      <button className={`${styles.leftArrow} ${styles[type]}`} onClick={() => prev()}>
             <ChevronLeft />
           </button>
-        )}
+        
 
         <div className={styles.contentWrapper}>
           <div
-            className={`${styles.content} ${styles[show]}`}
+            className={`${styles.content} ${styles[show]} `}
             style={{ transform: `translateX(-${currentIndex * (100 / number[show])}%)`}}
           >    
             {children}            
           </div>
         </div>
-        {currentIndex < ( length - number[show]) && (
-          <button className={styles.rightArrow} onClick={() => next()}>
+        <button className={`${styles.rightArrow} ${styles[type]}`} onClick={() => next()}>
             <ChevronRight />
           </button>
-        )}
+        
       </div>
      
+      
     </div>
   );
 }

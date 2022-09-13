@@ -3,13 +3,19 @@ import Image from "next/image";
 import ToolTip from "./ToolTip";
 import { MapPin } from "react-feather";
 import { calculateDistance } from "../utils/calculateDistance";
-
-
-export default function ToursimCard({ name, image, benefits, branche }) {
- 
+import {useRouter} from "next/router"
+export default function ToursimCard({ name, image, benefits, branche,crmid }) {
+    const router = useRouter()
+    
+      const handleClick = (e) => {
+        e.preventDefault()
+        router.push(`https://club.lanacion.com.ar/${crmid}`)
+      }
+    
   return (
     <div className={styles.container}>
       <div className={styles.boxImg}>
+           
         <Image
           width={1000}
           height={600}
@@ -17,10 +23,12 @@ export default function ToursimCard({ name, image, benefits, branche }) {
           src={image}
           alt="Image city"
           className={styles.img}
+          onClick={(e)=> handleClick(e)}
         />
+
       </div>
       <div className={styles.boxDescription}>
-        <h1>{name}</h1>
+       <a onClick={(e)=>handleClick(e)}> <h1>{name}</h1>  </a>
       </div>
       <div className={styles.benefitsGroup}>
         {benefits.program_name.map((name) => {

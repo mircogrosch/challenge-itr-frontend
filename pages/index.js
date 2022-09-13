@@ -4,15 +4,18 @@ import TourismContainer from "../containers/TourismContainer";
 import { getBenefits,getBranches } from "../utils/http-common";
 
 export default function Home({branches,benefits}) {
-  console.log("Sucursales",branches)
-  console.log("Beneficios", benefits)
   return (
     <PageLayout title={"Club LA NACION"}>
+      <header>   
         <Header />
-        <div style={{display:"flex", justifyContent:"center", alignItems:"center", backgroundColor:"gray", height:"100vh", margin:15}}> 
+      </header>
+      <main> 
+         <div style={{display:"flex", justifyContent:"center", backgroundColor:"#f2f0f0", height:"100vh"}}> 
               <TourismContainer branches={branches}/>
-        </div>
-        
+         </div>
+      </main>
+       
+
     </PageLayout>
   );
 }

@@ -9,7 +9,7 @@ export default function Header() {
         <NavBar />
       </div>
       <div className={styles.carousel}>
-        <Carousel show={"one"}>
+        <Carousel show={"one"} type="header">
           <Image
             width={1500}
             src={require("../public/assets/img/sushi-club.png")}
