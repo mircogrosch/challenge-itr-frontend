@@ -1,16 +1,8 @@
-import { useEffect,useState } from "react";
 import { Menu, Search, Bell, Heart } from "react-feather";
 import styles from "../styles/NavBar.module.css";
 import Image from "next/image";
 import ClubLogo from "../public/assets/logos/club_header.png";
 export default function NavBar() {
-  const [scroll,setScroll] = useState()
-  useEffect(()=>{
-      setScroll(window.scroll())
-  },[typeof window !== "undefined" ? window.scroll(): null])
-
-  console.log(scroll)
-
  
   return (
     <nav className={styles.container}>

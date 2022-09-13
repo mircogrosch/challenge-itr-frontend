@@ -4,7 +4,7 @@ import ToolTip from "./ToolTip";
 import { MapPin } from "react-feather";
 import { calculateDistance } from "../utils/calculateDistance";
 import {useRouter} from "next/router"
-export default function ToursimCard({ name, image, benefits, branche,crmid }) {
+export default function TourismCard({ name, image, benefits, branche,crmid }) {
     const router = useRouter()
     
       const handleClick = (e) => {
@@ -31,9 +31,9 @@ export default function ToursimCard({ name, image, benefits, branche,crmid }) {
        <a onClick={(e)=>handleClick(e)}> <h1>{name}</h1>  </a>
       </div>
       <div className={styles.benefitsGroup}>
-        {benefits.program_name.map((name) => {
+        {benefits.program_name.map((name,i) => {
           return (
-            <div>
+            <div key={i}>
               <ToolTip title={name.split(" ")[3]}>
                 <h2
                   className={`${styles.typeBenefits} ${

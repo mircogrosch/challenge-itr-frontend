@@ -4,6 +4,9 @@ const nextConfig = {
   swcMinify: true,
   images:{
     domains: ["bucket1.glanacion.com"]
+  },
+  env:{
+    API_URL: "http://localhost:3001"
   }
 }
 
