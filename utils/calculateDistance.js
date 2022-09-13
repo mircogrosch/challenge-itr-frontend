@@ -1,3 +1,8 @@
+/**
+ * Calculate distance, in mts and km 
+ * @param {*} distance value in mts
+ */
+
 export const calculateDistance =(distance)=>{ 
     if(distance <= 90){
         return { 
