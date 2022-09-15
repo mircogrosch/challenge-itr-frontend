@@ -46,7 +46,9 @@
     border-radius: 50px;
     cursor: pointer; 
     border: none;
+    margin-left: 5px;
 }
+
 
 .btn{
     color:var(--white);
