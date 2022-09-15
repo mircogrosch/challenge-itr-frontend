@@ -1,8 +1,8 @@
-import styles from "../styles/TourismCard.module.css";
+import styles from "./TourismCard.module.css";
 import Image from "next/image";
-import ToolTip from "./ToolTip";
+import ToolTip from "../ToolTip/ToolTip";
 import { MapPin } from "react-feather";
-import { calculateDistance } from "../utils/calculateDistance";
+import { calculateDistance } from "../../utils/calculateDistance";
 import { useRouter } from "next/router";
 
 export default function TourismCard({ name, image, benefits, branche, crmid }) {

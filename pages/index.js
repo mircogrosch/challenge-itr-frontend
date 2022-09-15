@@ -1,8 +1,8 @@
-import PageLayout from "../components/PageLayout";
-import Header from "../containers/Header";
-import TourismContainer from "../containers/TourismContainer";
+import PageLayout from "../components/PageLayout/PageLayout";
+import Header from "../containers/Header/Header";
+import TourismContainer from "../containers/TourismContainer/TourismContainer";
 import { getBenefits, getBranches } from "../utils/http-common";
-import DiscountsContainer from "../containers/DiscountsContainer";
+import DiscountsContainer from "../containers/DiscountsContainer/DiscountsContainer";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ branches, benefits }) {

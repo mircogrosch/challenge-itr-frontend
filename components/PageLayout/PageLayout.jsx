@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/PageLayout.module.css";
+import styles from "./PageLayout.module.css";
 
 export default function PageLayout({ children, title }) {
   return (

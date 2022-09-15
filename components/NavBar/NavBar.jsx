@@ -1,7 +1,7 @@
 import { Menu, Search, Bell, Heart } from "react-feather";
-import styles from "../styles/NavBar.module.css";
+import styles from "./NavBar.module.css";
 import Image from "next/image";
-import ClubLogo from "../public/assets/logos/club_header.png";
+import ClubLogo from "../../assets/logos/club_header.png";
 
 
 export default function NavBar() {

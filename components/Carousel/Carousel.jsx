@@ -1,4 +1,4 @@
-import styles from "../styles/Carousel.module.css";
+import styles from "./Carousel.module.css";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
 

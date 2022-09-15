@@ -1,7 +1,7 @@
-import styles from "../styles/DiscountsContainer.module.css";
-import Carousel from "../components/Carousel";
-import Button from "../components/Button";
-import DiscountsCard from "../components/DiscountsCard";
+import styles from "./DiscountsContainer.module.css";
+import Carousel from "../../components/Carousel/Carousel";
+import Button from "../../components/Button/Button";
+import DiscountsCard from "../../components/DiscountsCard/DiscountsCard";
 
 export default function DiscountsContainer({ benefits }) {
   return (

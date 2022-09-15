@@ -1,7 +1,7 @@
-import NavBar from "../components/NavBar";
-import Carousel from "../components/Carousel";
+import NavBar from "../../components/NavBar/NavBar";
+import Carousel from "../../components/Carousel/Carousel";
 import Image from "next/image";
-import styles from "../styles/Header.module.css";
+import styles from "./Header.module.css";
 
 export default function Header() {
   return (
@@ -14,12 +14,12 @@ export default function Header() {
           <Image
             width={1500}
             height={600}
-            src={require("../public/assets/img/sushi-club.png")}
+            src={require("../../assets/img/sushi-club.png")}
           />
           <Image
             width={1500}
             height={600}
-            src={require("../public/assets/img/header_2.png")}
+            src={require("../../assets/img/header_2.png")}
           />
         </Carousel>
       </div>

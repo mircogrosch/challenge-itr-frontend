@@ -1,7 +1,7 @@
-import Carousel from "../components/Carousel";
-import TourismCard from "../components/TourismCard";
-import styles from "../styles/TourismContainer.module.css";
-import Button from "../components/Button";
+import Carousel from "../../components/Carousel/Carousel";
+import TourismCard from "../../components/TourismCard/TourismCard";
+import styles from "./TourismContainer.module.css";
+import Button from "../../components/Button/Button";
 
 export default function TourismContainer({ branches }) {
   return (

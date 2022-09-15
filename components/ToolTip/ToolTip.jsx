@@ -1,4 +1,4 @@
-import styles from "../styles/ToolTip.module.css";
+import styles from "./ToolTip.module.css";
 
 export default function ToolTip({ children, title }) {
   return (

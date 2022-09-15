@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "../styles/DiscountsCard.module.css";
-import Button from "./Button";
+import styles from "./DiscountsCard.module.css";
+import Button from "../Button/Button";
 import { useRouter } from "next/router";
 
 export default function DiscountsCard({ name, image, crmid }) {
