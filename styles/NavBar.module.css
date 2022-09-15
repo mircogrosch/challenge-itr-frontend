@@ -45,12 +45,14 @@
     background-color: dodgerblue;
     border-radius: 50px;
     cursor: pointer; 
+    border: none;
 }
 
 .btn{
     color:var(--white);
     background-color: transparent;
     cursor: pointer;
+    border: none;
 }   
 
 .emoji{ 
